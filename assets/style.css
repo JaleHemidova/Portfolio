@@ -267,66 +267,72 @@ footer p {
     font-size: 12px;
     margin-top: 10px;
 }
-@media (min-width: 1399.98px) {
-    .home .info{
-        padding-left: 60px !important;
+
+
+
+
+
+@media screen and (max-width: 374.98px){
+    .navbar{
+        padding: 0 20px !important;
     }
-    .skill{
-        width: 500px !important;
+    header{
+        height: 700px;
     }
-}
-@media (max-width: 1199.98px) {
+    .logo{
+        width: 80px;
+    }
     .home .info{
-        padding-left: 90px !important;
+        padding-left: 10px !important;
     }
     .home h1{
-        font-size: 50px;
-    }
-}
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        padding-left: 14px !important;
-    }
-    header {
-        height: 1000px;
-    }
-    .portfolio .col-lg-4 {
-        width: 46%;
-        margin: 20px 10px;
-    }
-    .skill{
-        font-size: 14px;
-        width: 350px !important;
-    }
-    .additional h5{
-        font-size: 16px;
-        margin-top: 8px;
-    }
-    .additional .col img{
-        width: 100px;
-    }
-}
-@media (max-width: 767.98px) {
-    .home .info{
-        padding-left: 100px !important;
-    }
-    .portfolio .col-lg-4 {
-        width: 65%;
-        margin: 20px auto;
-    }
-    .skill{
-        font-size: 14px;
-        width: 530px !important;
-    }
-    .about #first {
-        margin-left: 230px;
+        font-size: 28px !important;
     }
 
+    .home h3 {
+        font-size: 18px;
+    }
+
+    .home p {
+        font-size: 12px;
+    }
+    .home a{
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+    .hero img{
+        width: 200px;
+        margin-left: 50px;
+    }
+    .skill{
+        font-size: 11px !important;
+        width: 280px !important;
+    }
+    .about{
+        margin-left: 28px;
+    }
+    .about #first {
+        margin-left: 90px;
+    }
     .about #second {
-        margin: 40px 0 15px 180px !important;
+        margin: 40px 0 15px 60px !important;
+    }
+    .about h5{
+        font-size: 14px !important;
+    }
+    .portfolio .col-lg-4 {
+        width: 88%;
+        margin: 20px auto;
+    }
+    .contact input,
+    .contact textarea {
+        width: 300px;
+    }
+    .contact button {
+        margin-left: 202px;
     }
 }
-@media (max-width: 575.98px) {
+@media screen and (min-width: 374.98px) and (max-width: 575.98px) {
     .navbar {
         padding-left: 10px !important;
     }
@@ -371,11 +377,11 @@ footer p {
 
     .hero img {
         width: 280px;
-        margin: 40px 0 0 50px;
+        margin: 40px 0 0 70px;
     }
 
     .additional h5 {
-        font-size: 17px;
+        font-size: 16px;
         margin-top: 5px;
     }
 
@@ -388,16 +394,16 @@ footer p {
     }
 
     .about .skill {
-        width: 320px !important;
-        font-size: 14px;
+        width: 310px !important;
+        margin: 18px auto !important;
+        font-size: 12px;
     }
-
     .about #first {
-        margin-left: 165px;
+        margin-left: 115px !important;
     }
 
-    .about #second {
-        margin: 40px 0 15px 120px !important;
+    .about #second {        
+        margin-left: 80px !important;
     }
 
     .portfolio .col-lg-4 {
@@ -424,49 +430,68 @@ footer p {
         font-size: 12px;
     }
 }
-@media (max-width: 375px){
-    .home .info{
-        padding-left: 10px !important;
-    }
-    .home h1{
-        font-size: 28px !important;
-    }
-
-    .home h3 {
-        font-size: 18px;
-    }
-
-    .home p {
-        font-size: 12px;
-    }
-    .hero img{
-        width: 250px;
-    }
-    .skill{
-        font-size: 12px !important;
-        width: 300px !important;
-    }
-    .about{
-        margin-left: 28px;
-    }
-    .about #first {
-        margin-left: 122px;
-    }
-    .about #second {
-        margin: 40px 0 15px 70px !important;
-    }
-    .about h5{
-        font-size: 14px !important;
+@media screen and (min-width: 575.98px) and (max-width: 767.98px) {
+    /* .home .info{
+        padding-left: 100px !important;
+    } */
+    header{
+        height: 1000px;
     }
     .portfolio .col-lg-4 {
-        width: 88%;
+        width: 65%;
         margin: 20px auto;
     }
-    .contact input,
-    .contact textarea {
-        width: 300px;
+    .skill{
+        font-size: 14px;
+        width: 530px !important;
     }
-    .contact button {
-        margin-left: 202px;
+    .about #first {
+        margin-left: 230px;
+    }
+
+    .about #second {
+        margin: 40px 0 15px 180px !important;
+    }
+}
+@media screen and (min-width: 767.98px) and (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-left: 14px !important;
+    }
+    header {
+        height: 1000px !important;
+    }
+    .home .info{
+        padding-left: 70px !important;
+    }
+    .portfolio .col-lg-4 {
+        width: 46%;
+        margin: 20px 10px;
+    }
+    .skill{
+        font-size: 14px;
+        width: 350px !important;
+    }
+    .additional h5{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .additional .col img{
+        width: 100px;
+    }
+}
+@media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
+    .home .info{
+        padding-left: 90px !important;
+    }
+    .home h1{
+        font-size: 50px;
+    }
+}
+@media screen and (min-width: 1199.98px) and (max-width: 1399.98px) {
+    .home .info{
+        padding-left: 60px !important;
+    }
+    .skill{
+        width: 500px !important;
     }
 }
