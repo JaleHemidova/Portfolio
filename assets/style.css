@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo";
+}
+
+/* HEADER */
+header {
+    background-image: url("./imgs/unnamed.jpg");
+    height: 100vh;
+    color: #FFF !important;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar {
+    font-family: "Varela Round";
+    background-color: #000;
+    padding: 0 110px !important;
+}
+
+.navbar-toggler {
+    color: #fff;
+    font-size: 35px;
+}
+
+.nav-link {
+    color: #FFF;
+}
+
+.navbar,
+header .logo,
+.menu-btn {
+    transition: .6s;
+}
+
+/* for links color after clicked in js */
+.active {
+    color: #eebb57;
+}
+
+.nav-link:hover {
+    color: #eebb57;
+}
+
+.home {
+    padding-top: 180px;
+}
+
+.hi {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+.cv {
+    background-color: #A8894B;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.hero img {
+    margin-left: 150px;
+    width: 350px;
+}
+
+main {
+    height: 500px;
+}
+
+/* ABOUT */
+.about .skill {
+    width: 450px;
+    margin-bottom: 18px;
+}
+
+.about .skill div {
+    padding: 4px 15px;
+    text-align: center;
+}
+
+.about .skill-w {
+    background-color: rgb(196, 141, 247);
+}
+
+.about .skill-name {
+    background-color: rgb(212, 168, 253);
+}
+
+.about .skill-percent {
+    background-color: rgb(207, 207, 207);
+}
+
+.about .additional img {
+    text-align: center;
+    width: 45%;
+}
+
+/* PORTFOLIO */
+#portfolio {
+    background-color: rgb(241, 241, 241);
+}
+
+hr {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 70px;
+    margin: 0 auto 30px auto;
+    opacity: 1;
+}
+
+.portfolio .col-lg-4 {
+    width: 30%;
+    margin: 0 30px 30px 0;
+    padding: 0;
+    transition: 1s ease;
+    /* position: relative; */
+}
+
+
+.portfolio .col-lg-4 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .text {
+    position: absolute;
+    left: 28%;
+    text-align: center !important;
+    color: black;
+    opacity: 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.portfolio #third .text {
+    left: 35%;
+}
+
+.portfolio #fifth .text {
+    left: 36%;
+}
+
+.portfolio #fourth .text {
+    left: 31%;
+}
+
+.portfolio #sixth .text {
+    left: 23%;
+}
+
+.portfolio #seventh .text {
+    left: 19%;
+}
+
+.portfolio a {
+    position: absolute;
+    left: 30%;
+    opacity: 0;
+    border: 1px solid #d33c4b;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 35px;
+}
+
+.portfolio a:hover {
+    background-color: #d33c4b;
+    color: #FFF;
+}
+
+.portfolio .col-lg-4:hover {
+    transform: scale(1.1);
+    transition: .8s ease;
+    border: 1px solid rgb(83, 83, 83);
+}
+
+.portfolio .col-lg-4:hover .text {
+    top: 5%;
+    transition: .8s;
+    transform: translateY(80%);
+    opacity: 1;
+}
+
+.portfolio .col-lg-4:hover a {
+    bottom: 15%;
+    transition: .8s;
+    transform: translateY(-80%);
+    opacity: 1;
+}
+
+.portfolio .col-lg-4:hover img {
+    opacity: 0;
+}
+
+/* CONTACT */
+#contact {
+    background-color: rgb(58, 58, 58);
+}
+
+.contact input,
+.contact textarea {
+    width: 420px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+}
+.contact input:focus,
+.contact textarea:focus{
+    box-shadow: none;
+    border-color: white;
+}
+.contact textarea {
+    font-size: 20px;
+    padding: 5px 16px;
+    height: 150px;
+}
+
+.contact button {
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 322px;
+}
+
+.form-control::placeholder {
+    color: #fff !important;
+}
+
+.form-control:focus {
+    color: #fff !important;
+    background-color: rgb(44, 44, 44);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    height: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer .icons i {
+    font-size: 26px;
+    margin: 10px;
+    color: #FFF;
+}
+
+footer p {
+    color: rgb(211, 211, 211);
+    font-size: 12px;
+    margin-top: 10px;
+}
+@media (max-width: 1399.98px) {
+    /* .home {
+        padding-left: 40px !important;
+    } */
+}
+@media (max-width: 1199.98px) {
+    .home h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-left: 14px !important;
+    }
+    header {
+        height: 1000px;
+    }
+    .portfolio .col-lg-4 {
+        width: 46%;
+        margin: 20px 10px;
+    }
+    .skill{
+        font-size: 14px;
+        width: 350px !important;
+    }
+    .additional h5{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .additional .col img{
+        width: 100px;
+    }
+}
+@media (max-width: 767.98px) {
+    .portfolio .col-lg-4 {
+        width: 65%;
+        margin: 20px auto;
+    }
+    .skill{
+        font-size: 14px;
+        width: 530px !important;
+    }
+    .about #first {
+        margin-left: 230px;
+    }
+
+    .about #second {
+        margin: 40px 0 15px 180px !important;
+    }
+}
+@media (max-width: 575.98px) {
+    .navbar {
+        padding-left: 10px !important;
+    }
+
+    .navbar-collapse {
+        padding-left: 14px !important;
+    }
+
+    .navbar-toggler {
+        /* margin-right: -90px; */
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .home h1 {
+        font-size: 40px !important;
+    }
+
+    .home h3 {
+        font-size: 20px;
+    }
+
+    .home p {
+        font-size: 14px;
+    }
+
+    .home a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    header {
+        height: 850px !important;
+    }
+
+    .hero img {
+        width: 280px;
+        margin: 40px 0 0 90px;
+    }
+
+    .additional h5 {
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .about {
+        margin-left: 40px;
+    }
+
+    .about h3 {
+        font-size: 22px;
+    }
+
+    .about .skill {
+        width: 400px !important;
+        font-size: 14px;
+    }
+
+    .about #first {
+        margin-left: 165px;
+    }
+
+    .about #second {
+        margin: 40px 0 15px 120px !important;
+    }
+
+    .portfolio .col-lg-4 {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .contact .form-control::placeholder,
+    .contact button {
+        font-size: 17px;
+    }
+
+    footer .icons i {
+        font-size: 20px;
+        margin: 7px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
